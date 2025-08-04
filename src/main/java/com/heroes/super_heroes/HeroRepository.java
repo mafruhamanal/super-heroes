@@ -8,6 +8,6 @@ import java.util.Optional;
 // params specify entity type and primary key type
 public interface HeroRepository extends JpaRepository<HeroStats, Long> {
 
-    void deleteByName(String hero_name);
+    void deleteByFilmName(String film_name);
     Optional<HeroStats> findByName(String name); // optional handles cases where player might not be found
 }
